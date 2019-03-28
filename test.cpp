@@ -11,10 +11,9 @@ int main(){
       mapa[texto[x]]=mapa[texto[x]]+1;
     }
     else{
-      if(mapa[texto[x]]=='a' || mapa[texto[x]]=='e' || mapa[texto[x]]=='i' || mapa[texto[x]]=='o' || mapa[texto[x]]=='u' ){
+      if(texto[x]=='a' || texto[x]=='e' || texto[x]=='i' || texto[x]=='o' || texto[x]=='u' ){
           mapa[texto[x]]=1;
       }
-
     }
   }
   for (std::map<char,int>::iterator it=mapa.begin(); it!=mapa.end(); ++it)
